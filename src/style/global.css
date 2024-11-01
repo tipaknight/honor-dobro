@@ -1,0 +1,53 @@
+@unocss;
+
+@font-face {
+  font-family: HONORSans;
+  src: url("/fonts/HONORSans-Demibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: HONORSans;
+  src: url("/fonts/HONORSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+html {
+  @apply font-['HONORSans'];
+}
+ol {
+  @apply list-decimal list-outside text-1.5vw;
+}
+li {
+  @apply m-b-0.8vw;
+}
+.text-h3 {
+  @apply text-3.5vw md-text-2.5vw font-600 lh-3.6vw md-lh-3vw;
+}
+.text-h4 {
+  @apply text-2.5vw md-text-1.5vw font-600 lh-3vw md-lh-2.2vw;
+}
+.text-p {
+  @apply text-2vw md-text-1.5vw lh-2.5vw md-lh-2vw;
+}
+.link-click {
+  @apply hover:color-emerald-800 focus:color-emerald-800 active:color-emerald-800;
+}
+.card {
+  @apply flex
+  flex-col
+  items-center
+  justify-center
+  bg-gray-2
+  h-140px
+  w-140px
+  sm-h-180px
+  sm-w-184px
+  md-h-240px
+  md-w-250px
+  lg-h-320px
+  lg-w-340px
+  rounded-4;
+}

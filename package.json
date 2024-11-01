@@ -1,0 +1,29 @@
+{
+  "name": "honor-dobro",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/react": "^3.6.2",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "astro": "^4.16.7",
+    "astro-color-scheme": "^1.1.5",
+    "daisyui": "^3.9.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "unocss": "^0.63.6",
+    "unocss-preset-daisy": "^7.0.0"
+  },
+  "devDependencies": {
+    "@unocss/postcss": "^0.63.6",
+    "prettier": "^3.3.3",
+    "prettier-plugin-astro": "^0.14.1"
+  }
+}

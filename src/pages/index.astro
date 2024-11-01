@@ -1,0 +1,75 @@
+---
+import Layout from "../layouts/layout.astro";
+import metaData from "../data/metaData.json";
+import Hero from "../components/Hero.astro";
+import HeroMob from "../components/HeroMob.astro";
+import Media from "../components/Media";
+import BlockGrid from "../components/BlockGrid.astro";
+import BlockGridMob from "../components/BlockGridMob.astro";
+import BlockOne from "../components/BlockOne.astro";
+import BlockTwo from "../components/BlockTwo.astro";
+import BlockThree from "../components/BlockThree.astro";
+import BlockFour from "../components/BlockFour.astro";
+import BlockFive from "../components/BlockFive.astro";
+import BlockSix from "../components/BlockSix.astro";
+import BlockSeven from "../components/BlockSeven.astro";
+import BlockEight from "../components/BlockEight.astro";
+import BlockNine from "../components/BlockNine.astro";
+import BlockText from "../components/BlockText.astro";
+---
+
+<Layout
+  title={metaData.title}
+  description={metaData.description}
+  keywords={metaData.keywords}
+  pageType={metaData.pageType}
+  siteName={metaData.siteName}
+>
+  <header>
+    <div
+      un-container
+      pt-6vw
+      md:pt-8
+      px-8
+      mx-auto
+      un-flex
+      flex-row
+      md:justify-end
+      justify-center
+    >
+      <a href="/"
+        ><img src="/images/logo-1.svg" md:w-250px w-32vw alt="logo" /></a
+      >
+    </div>
+  </header>
+  <main un-container mx-auto>
+    <Hero />
+    <HeroMob />
+    <Media client:load />
+    <BlockGrid />
+    <BlockGridMob />
+    <BlockOne />
+    <BlockTwo />
+    <BlockThree />
+    <BlockFour />
+    <BlockFive />
+    <BlockSix />
+    <BlockSeven />
+    <BlockEight />
+    <BlockNine />
+    <BlockText />
+  </main></Layout
+>
+<footer
+  h-8vw
+  class="footer bg-gradient-to-b from-slate-50 to-slate-300 items-center p-4"
+>
+  <div un-container un-flex flex-row gap-3 justify-around mx-auto w-93%>
+    <p text-1.3vw>© ООО «Абсолют Трейд», ОГРН 1175024024130 , 2024</p>
+
+    <nav un-flex flex-row text-1.3vw gap-x-5vw>
+      <a href="/" target="_blank" class="link link-hover">О компании</a>
+      <a href="/" target="_blank" class="link link-hover">Контакты</a>
+    </nav>
+  </div>
+</footer>

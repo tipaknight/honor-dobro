@@ -1,0 +1,66 @@
+---
+import Button from "../components/Button.astro";
+---
+
+<div hidden md-flex justify-between items-end>
+  <div un-shrink><img src="/images/hero.webp" alt="hero" /></div>
+  <div un-shrink>
+    <img src="/images/honor.svg" alt="honor" w-28vw mx-auto />
+    <p un-text="center [1.5vw]" font-600 py-5>
+      Ударопрочность и влагозащита IP641
+    </p><table mx-auto mb-10>
+      <tr>
+        <td
+          ><p un-text="center [1vw]" px-2>
+            Яркий экран<br />
+            <b>120 Гц</b><sup>2</sup>
+          </p></td
+        >
+        <td
+          ><p
+            un-text="center [1vw]"
+            px-2
+            un-border="r-1 l-1 solid r-black l-black"
+          >
+            Конфигурация памяти<br />
+            <b>до 8 + 256 ГБ</b><sup>3</sup>
+          </p>
+        </td>
+        <td
+          ><p un-text="center [1vw]" px-2>
+            Емкая батарея<br />
+            <b>5200 мА·ч</b><sup>4</sup>
+          </p>
+        </td>
+      </tr>
+    </table>
+    <a
+      href="/"
+      bg-dark
+      un-block
+      w-12vw
+      mx-auto
+      px-2
+      py-0.8vw
+      text-center
+      text-white
+      text-1.2vw
+      rounded-0.6vw>Где купить</a
+    >
+    <div un-flex flex-col items-end mt-8 lg:mt-12 pr-3>
+      <img w-10vw src="/images/star-1.svg" alt="star" />
+      <img w-10vw src="/images/magic.svg" alt="magic" />
+    </div>
+    <div w-38vw mt-2 pb-3 pr-3>
+      <p text-0.6vw text-right>
+        0+. 1. Продукт содержит высокоточные электронные компоненты, не роняйте
+        и не ударяйте смартфон. Влагозащита не является постоянной
+        характеристикой и может снижаться при эксплуатации. 2. Экран
+        поддерживает частоту обновления 120 Гц. Фактическая частота зависит от
+        выбранных настроек и используемых приложений. 3. Доступный объем памяти
+        меньше из-за использования системой. 4. Емкость батареи по данным
+        лаборатории HONOR. Фактический внешний вид устройства может отличаться.
+      </p>
+    </div>
+  </div>
+</div>
