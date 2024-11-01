@@ -1,23 +1,22 @@
 ---
-import "../style/global.css"
+import "../style/global.css";
 interface Props {
   title: string;
   description: string;
   keywords?: string;
   pageType?: string;
   siteName?: string;
-
 }
 
 const { title, description, keywords, pageType, siteName } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="ru">
+<html lang="ru" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="color-scheme" content="only light">
+    <meta name="color-scheme" content="only light" />
     <meta name="keywords" content={keywords} />
     <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -32,11 +31,8 @@ const { title, description, keywords, pageType, siteName } = Astro.props;
     <meta property="og:description" content={description} />
 
     <title>{title}</title>
-
   </head>
   <body>
     <slot />
   </body>
 </html>
-
-
