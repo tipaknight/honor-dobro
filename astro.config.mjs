@@ -6,14 +6,18 @@ import { presetDaisy } from "unocss-preset-daisy";
 import react from "@astrojs/react";
 
 export default defineConfig({
-  integrations: [unocss({
-    presets: [
-      presetUno(),
-      presetDaisy({
-        styled: true,
-        themes: ["light"],
-      }),
-    ],
-    injectReset: true,
-  }), react()],
+  integrations: [
+    unocss({
+      presets: [
+        presetUno(),
+        presetDaisy({
+          styled: true,
+          themes: ["light"],
+          darkTheme: false,
+        }),
+      ],
+      injectReset: true,
+    }),
+    react(),
+  ],
 });
