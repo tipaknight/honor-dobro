@@ -1,10 +1,10 @@
 ---
-import Button from "../components/Button.astro";
+
 ---
 
 <div hidden md-flex justify-between items-end>
   <div un-shrink><img src="/images/hero.webp" alt="hero" /></div>
-  <div un-shrink>
+  <div un-shrink md-m-t-4vw>
     <img src="/images/honor.svg" alt="honor" w-28vw mx-auto />
     <p un-text="center [1.5vw]" font-600 py-5>
       Ударопрочность и влагозащита IP641
@@ -35,7 +35,7 @@ import Button from "../components/Button.astro";
       </tr>
     </table>
     <a
-      href="/"
+      href="#buy"
       bg-dark
       un-block
       w-12vw
@@ -47,12 +47,20 @@ import Button from "../components/Button.astro";
       text-1.2vw
       rounded-0.6vw>Где купить</a
     >
-    <div un-flex flex-col items-end mt-8 lg:mt-12 pr-3>
-      <img w-10vw src="/images/star-1.svg" alt="star" />
-      <img w-10vw src="/images/magic.svg" alt="magic" />
+    <div
+      un-flex
+      flex-col
+      items-end
+      md-m-t-10
+      lg-m-t-20
+      xl-m-t-40
+      2xl-m-18vw
+      pr-3
+    >
+      <img w-8vw src="/images/logo-2.svg" alt="logo" />
     </div>
     <div w-38vw mt-2 pb-3 pr-3>
-      <p text-0.6vw text-right>
+      <p lg-text-0.5vw text-0.6vw text-right>
         0+. 1. Продукт содержит высокоточные электронные компоненты, не роняйте
         и не ударяйте смартфон. Влагозащита не является постоянной
         характеристикой и может снижаться при эксплуатации. 2. Экран

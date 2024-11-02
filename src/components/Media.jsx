@@ -38,8 +38,16 @@ export default function Media() {
             onClick={toggleVideoPlay}
           >
             <source
-              src="/media/1_full.webm"
+              src="/media/2_full.webm"
               type='video/webm; codecs="vp8, vorbis"'
+            />
+            <source
+              src="/media/2_full.mp4"
+              type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'
+            />
+            <source
+              src="/media/2_full.ogv"
+              type='video/ogg; codecs="theora, vorbis"'
             />
           </video>
         </div>
@@ -56,8 +64,16 @@ export default function Media() {
             onClick={toggleVideoPlay}
           >
             <source
-              src="/media/2_full.webm"
+              src="/media/1_full.webm"
               type='video/webm; codecs="vp8, vorbis"'
+            />
+            <source
+              src="/media/1_full.mp4"
+              type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'
+            />
+            <source
+              src="/media/1_full.ogv"
+              type='video/ogg; codecs="theora, vorbis"'
             />
           </video>
         </div>
@@ -65,10 +81,18 @@ export default function Media() {
 
       {/* Навигация по слайдам */}
       <div className="flex w-full justify-center gap-2 py-2">
-        <a href="#item1" className="btn btn-xs" onClick={handleCarouselClick}>
+        <a
+          href="#item1"
+          className="btn btn-outline btn-sm"
+          onClick={handleCarouselClick}
+        >
           1
         </a>
-        <a href="#item2" className="btn btn-xs" onClick={handleCarouselClick}>
+        <a
+          href="#item2"
+          className="btn btn-outline btn-sm"
+          onClick={handleCarouselClick}
+        >
           2
         </a>
       </div>
