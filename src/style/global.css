@@ -18,19 +18,19 @@ html {
   @apply font-['HONORSans'];
 }
 ol {
-  @apply list-decimal list-outside text-1.5vw;
+  @apply list-decimal list-outside text-1.5vw xl-text-16px;
 }
 li {
-  @apply m-b-0.8vw;
+  @apply m-b-0.8vw xl-m-b-10px;
 }
 .text-h3 {
-  @apply text-3.5vw md-text-2.5vw font-600 lh-3.6vw md-lh-3vw;
+  @apply text-3.5vw xl-text-40px md-text-2.5vw font-600 lh-3.6vw xl-lh-120% md-lh-3vw;
 }
 .text-h4 {
-  @apply text-2.5vw md-text-1.5vw font-600 lh-3vw md-lh-2.2vw;
+  @apply text-2.5vw xl-text-24px md-text-1.5vw font-600 lh-3vw xl-lh-120% md-lh-2.2vw;
 }
 .text-p {
-  @apply text-2vw md-text-1.5vw lh-2.5vw md-lh-2vw;
+  @apply text-2vw xl-text-24px md-text-1.5vw lh-2.5vw xl-lh-120% md-lh-2vw;
 }
 .link-click {
   @apply hover:color-emerald-800 focus:color-emerald-800 active:color-emerald-800;

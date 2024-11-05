@@ -58,27 +58,38 @@ import BlockText from "../components/BlockText.astro";
     <BlockEight />
     <BlockNine />
     <BlockText />
-  </main></Layout
->
-<footer
-  h-11vw
-  md-h-9vw
-  class="footer bg-gradient-to-b from-slate-50 to-slate-300 items-center p-4"
->
-  <div un-container un-flex flex-row gap-3 justify-around mx-auto w-93% p-b-2vw>
-    <p text-1.3vw>© ООО «Абсолют Трейд», ОГРН 1175024024130 , 2024</p>
+  </main><footer
+    h-11vw
+    md-h-9vw
+    xl-h-240px
+    class="footer bg-gradient-to-b from-slate-50 to-slate-300 items-center p-4"
+  >
+    <div
+      un-container
+      un-flex
+      flex-row
+      gap-3
+      justify-around
+      mx-auto
+      w-93%
+      p-b-2vw
+    >
+      <p text-1.3vw xl-text-24px>
+        © ООО «Абсолют Трейд», ОГРН 1175024024130 , 2024
+      </p>
 
-    <nav un-flex flex-row text-1.3vw gap-x-5vw>
-      <a
-        href="https://www.absoluttrade.ru/o-kompanii/"
-        target="_blank"
-        class="link link-hover">О компании</a
-      >
-      <a
-        href="https://www.absoluttrade.ru/o-kompanii/"
-        target="_blank"
-        class="link link-hover">Контакты</a
-      >
-    </nav>
-  </div>
-</footer>
+      <nav un-flex flex-row text-1.3vw xl-text-24px gap-x-5vw xl-gap-x-6>
+        <a
+          href="https://www.absoluttrade.ru/o-kompanii/"
+          target="_blank"
+          class="link link-hover">О компании</a
+        >
+        <a
+          href="https://www.absoluttrade.ru/o-kompanii/"
+          target="_blank"
+          class="link link-hover">Контакты</a
+        >
+      </nav>
+    </div>
+  </footer>
+</Layout>
